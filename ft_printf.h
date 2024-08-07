@@ -6,7 +6,7 @@
 /*   By: mlavergn <mlavergn@s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 23:36:42 by mlavergn          #+#    #+#             */
-/*   Updated: 2024/08/07 16:59:22 by mlavergn         ###   ########.fr       */
+/*   Updated: 2024/08/07 18:01:56 by mlavergn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdlib.h>
-# include <stdio.h>
-
-// cc -Wall -Werror -Wextra -c ft_printf.c -o ft_printf.o
-// cc -o test_program ft_printf.o -L. -lftprintf
 
 int	ft_printf(const char *str, ...);
 int	ft_putnbr_hex(char c, unsigned int n);
