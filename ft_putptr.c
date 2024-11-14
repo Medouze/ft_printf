@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mlavergn <mlavergn@s19.be>                 +#+  +:+       +#+        */
+/*   By: mlavergn <mlavergn@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 12:16:48 by mlavergn          #+#    #+#             */
-/*   Updated: 2024/08/07 16:57:55 by mlavergn         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:46:13 by mlavergn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int	ft_putptr(void *ptr)
 	value = (unsigned long)ptr;
 	count = 0;
 	if (value == 0)
-		return (count += ft_putstr("(nil)"));
+		//return (count += ft_putstr("0x0"));	//Macos
+		//return (count += ft_putstr("(nil)")); //Linux
 	count += ft_putstr("0x");
 	count += ft_putnbr_hex_ptr(value);
 	return (count);
